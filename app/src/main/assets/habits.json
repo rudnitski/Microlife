@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Smoking 15-24 cigarettes",
+    "resourceUrl": "smoking",
+    "men_microlives_per_day": -10,
+    "women_microlives_per_day": -9
+  },
+  {
+    "title": "Alcohol intake",
+    "resourceUrl": "whiskey",
+    "men_microlives_per_day": -1,
+    "women_microlives_per_day": -1
+  },
+  {
+    "title": "Obesity",
+    "resourceUrl": "belly",
+    "men_microlives_per_day": -1,
+    "women_microlives_per_day": -1
+  },
+  {
+    "title": "2 hours watching television",
+    "resourceUrl": "watching",
+    "men_microlives_per_day": -1,
+    "women_microlives_per_day": -1
+  },
+  {
+    "title": "Red meat, 1 portion (85 g)",
+    "resourceUrl": "meat",
+    "men_microlives_per_day": -1,
+    "women_microlives_per_day": -1
+  },
+  {
+    "title": "Fruit and vegetable intake",
+    "resourceUrl": "harvest",
+    "men_microlives_per_day": 4,
+    "women_microlives_per_day": 4
+  },
+  {
+    "title": "Coffee intake",
+    "resourceUrl": "coffee",
+    "men_microlives_per_day": 1,
+    "women_microlives_per_day": 1
+  },
+  {
+    "title": "First 20 minutes of moderate exercise",
+    "resourceUrl": "fitness",
+    "men_microlives_per_day": 2,
+    "women_microlives_per_day": 2
+  },
+  {
+    "title": "Taking a statin",
+    "resourceUrl": "medicine",
+    "men_microlives_per_day": 1,
+    "women_microlives_per_day": 1
+  }
+]

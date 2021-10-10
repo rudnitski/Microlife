@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.rudnitski.microlife.viewmodels.HabitAndJournalViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/habit_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/habit_id"
+            android:text="@{String.valueOf(viewModel.habitName)}"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/habit_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/habit_title"
+            app:layout_constraintEnd_toStartOf="@id/habit_microlife"
+            android:text="@{String.valueOf(viewModel.habitId)}"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/habit_microlife"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/habit_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@{String.valueOf(viewModel.microlifes)}"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
